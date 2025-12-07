@@ -16,9 +16,9 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # MQTT 設定
-MQTT_BROKER = "localhost"
+MQTT_BROKER = "172.20.10.3"
 MQTT_PORT = 1883
-MQTT_TOPIC = "客廳/感測器"
+MQTT_TOPIC = "living_room/sensor"
 
 # 全域數據儲存
 sensor_data = []
@@ -185,4 +185,3 @@ if __name__ == '__main__':
     print("=" * 60)
     
     socketio.run(app, host='0.0.0.0', port=8080, debug=False, allow_unsafe_werkzeug=True)
-
