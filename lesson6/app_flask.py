@@ -16,7 +16,7 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # MQTT 設定
-MQTT_BROKER = "192.168.137.166"
+MQTT_BROKER = "172.20.10.3"
 MQTT_PORT = 1883
 MQTT_TOPIC = "living_room/sensor"
 
@@ -184,4 +184,4 @@ if __name__ == '__main__':
     print(f" CSV 檔案: {CSV_FILE}")
     print("=" * 60)
     
-    socketio.run(app, host='0.0.0.0', port=8080, debug=False, allow_unsafe_werkzeug=True)
+    socketio.run(app, host='0.0.0.0', port=8080, debu
