@@ -9,8 +9,8 @@ import socket
 # -------------------------------
 # 你可以設定你的 WiFi 資訊
 # -------------------------------
-WIFI_SSID = "F602-52-wifi"
-WIFI_PASSWORD = "raspberry"
+WIFI_SSID = "xxxx"
+WIFI_PASSWORD = "xxx"
 
 # -------------------------------
 # WiFi 連線函式
