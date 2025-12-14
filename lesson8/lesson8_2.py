@@ -1,5 +1,4 @@
 from machine import Pin
-from time import sleep
 
 btn_pin = 14
 led_pin = 15
